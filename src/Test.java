@@ -23,30 +23,14 @@ public class Test {
         assertEquals("123", u.getPasswordHash());
     }
 
-
-
-
-    /*@org.junit.Test
-    public void restaTest() {
-        Calculadora c = new Calculadora(3, 2);
-        assertEquals(1, c.resta());
-    }
-
     @org.junit.Test
-    public void multiplicacionTest() {
-        Calculadora c = new Calculadora(2, 3);
-        assertEquals(6, c.multiplicacion());
+    public void passwordHashTest() {
+        String p="123";
+        User.UserController c = new User.UserController();
+        String res = c.hashCompute(p);
+        assertEquals("a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3".toUpperCase(), res);
+
     }
 
-    @org.junit.Test
-    public void divisionTest() {
-        Calculadora c = new Calculadora(6, 3);
-        assertEquals(2, c.division());
-    }
 
-    @org.junit.Test//(expected = java.lang.ArithmeticException.class)
-    public void divisionEntreCeroTest() throws Exception {
-        Calculadora c = new Calculadora(6, 0);
-        assertEquals(0, c.division());
-    }*/
 }

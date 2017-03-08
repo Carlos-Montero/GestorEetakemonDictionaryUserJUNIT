@@ -44,7 +44,7 @@ public class User {
         this.passwordhash = passwordhash;
     }
 
-    public class UserController {
+    public static class UserController {
 
         private Map<String,User> usermap = new HashMap<String,User>();
 
